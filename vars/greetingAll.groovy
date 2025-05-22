@@ -1,3 +1,3 @@
 def call() {
-  echo 'Hi, Welcome to Hexaware'
+  sh 'echo Hi, Welcome to Hexaware'
 }
