@@ -5,12 +5,31 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                helloWorld()
+                checkoutManager()
             }
         }
-        stage('Greeting') {
+        stage('Build') {
              steps {
-                 greetingAll()
+                 buildManager()
+        
+             }
+        }
+        stage('UnitTest') {
+             steps {
+                 unittestManager()
+        
+             }
+        }
+        stage('IntegrationTest') {
+             steps {
+                 integrationtestManager()
+        
+             }
+        }
+        stage('Deploy') {
+             steps {
+                 deployManager()
+        
              }
         }
     }
