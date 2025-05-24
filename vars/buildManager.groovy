@@ -1,4 +1,5 @@
 def call() {
-    echo 'Building Java application using Maven...'
-    sh 'mvn clean package'
+    // Use the configured Maven tool
+    def mvnHome = tool name: 'Maven', type: 'maven'
+    sh "${mvnHome}/bin/mvn clean package"
 }
