@@ -1,5 +1,5 @@
 def call() {
-    def ec2Ip = 'EC2_PUBLIC_IP'
+    def ec2Ip = '13.51.162.152'
     def sshKeyPath = '/path/to/your/ssh-key.pem'
     echo "Deploying application to EC2 instance: ${ec2Ip}"
     sh """
