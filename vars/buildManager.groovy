@@ -1,3 +1,4 @@
 def call() {
-    sh 'echo Hi, Welcome to Hexaware'
+    echo 'Building Java application using Maven...'
+    sh 'mvn clean package'
 }
