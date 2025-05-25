@@ -16,6 +16,12 @@ pipeline {
         
              }
         }
+        stage('Verify Build') {
+             steps {
+                 sh 'ls -l target/'
+             }
+        }
+
         stage('UnitTest') {
              steps {
                  unittestManager()
