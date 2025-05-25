@@ -1,5 +1,5 @@
 def call() {
-    def ec2Ip = '13.51.85.97'
+    def ec2Ip = '13.51.162.250'
     def sshKeyPath = '/c/Users/2000149437/Downloads/ravindrap.pem' // Corrected path
     echo "Deploying application to EC2 instance: ${ec2Ip}"
     sh """
