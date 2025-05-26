@@ -3,7 +3,7 @@ def call() {
     echo "Deploying application to EC2 instance: ${ec2Ip}"
     
     // Use the Secret File stored in Jenkins credentials
-    withCredentials([file(credentialsId: 'your-credential-id', variable: 'SSH_KEY_PATH')]) {
+    withCredentials([file(credentialsId: 'ssh-key', variable: 'SSH_KEY_PATH')]) {
         // Debug: Print SSH Key Path
         sh "echo 'Using SSH Key Path: ${SSH_KEY_PATH}'"
         
